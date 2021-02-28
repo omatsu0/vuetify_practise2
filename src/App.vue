@@ -19,23 +19,11 @@
           dense
         >
           <v-list-item-group>
-            <v-list-item>
-              <v-list-item-title>HOME</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>ABOUT</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>WORK</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>SERVICE</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>BLOG</v-list-item-title>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title>ACCESS</v-list-item-title>
+            <v-list-item
+              v-for="(menuItem, index) in menuItems"
+              :key="index"
+            >
+              <v-list-item-title>{{ menuItem.name }}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -46,10 +34,13 @@
 </template>
  
 <script>
-export default{
-  data(){
-    return{
-      drawer: false
+import constants from './common/constants' // 今回追加
+ 
+export default {
+  data () {
+    return {
+      drawer: false,
+      menuItems: constants.menuItems // 今回追加
     }
   }
 }
