@@ -2,27 +2,27 @@ export default {
   menuItems: [
     {
       name: 'HOME',
-      url: '#'
+      url: '/'
     },
     {
       name: 'ABOUT',
-      url: '#'
+      url: '/about'
     },
     {
       name: 'WORK',
-      url: '#'
+      url: '/work'
     },
     {
       name: 'SERVICE',
-      url: '#'
+      url: '/service'
     },
     {
       name: 'BLOG',
-      url: '#'
+      url: '/blog'
     },
     {
       name: 'ACCESS',
-      url: '#'
+      url: '/access'
     }
   ]
 }
