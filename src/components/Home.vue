@@ -4,6 +4,7 @@
     <HomeAbout/>
     <HomeWork/>
     <HomeService/>
+    あああ
   </section>
 </template>
 <script>
