@@ -15,7 +15,7 @@
               :key="index"
               :to="workItem.url"
             >
-              <img :src="workItem.src" alt="" class="img-fluid">
+              <img :src="workItem.src" alt="ねこ" class="img-fluid">
             </v-carousel-item>
           </v-carousel>
         </v-col>
